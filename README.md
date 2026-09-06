@@ -1,3 +1,46 @@
+# Olist Marketplace Analysis: Empirical Drivers of Customer Satisfaction
+
+![Platform Pipeline Architecture](assets/figures/fig6_pipeline_architecture.png)
+
+## Project Deliverables & Submission Links
+
+- **Interactive Google Colab Notebook:** [https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing](https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing)
+- **Executive Walkthrough Video (Google Drive):** [https://drive.google.com/drive/folders/1Uf6j48AsKabFEDEfOFSE4_QdjvegyAyc](https://drive.google.com/drive/folders/1Uf6j48AsKabFEDEfOFSE4_QdjvegyAyc)
+- **Formal Hackathon PDF Report:** [Olist_Analysis_Report.pdf](Olist_Analysis_Report.pdf)
+- **16:9 Presentation Slides:** [Olist_Marketplace_Analysis_Presentation.pptx](Olist_Marketplace_Analysis_Presentation.pptx)
+
+---
+
+## Analytical Visualizations & Diagnostics
+
+### 1. Delivery Timing vs. Review Score: The Threshold Cliff
+![Delivery Cliff](assets/figures/fig1_delivery_cliff.png)
+
+### 2. Confound Isolation: Multi-Seller vs. Single-Seller on On-Time Orders
+![Confound Isolation](assets/figures/fig4_confound_isolation.png)
+
+### 3. Multivariate Logistic Regression: Predictors of Dissatisfaction
+![Odds Ratios](assets/figures/fig2_odds_ratios.png)
+
+### 4. Geographic Supply vs Demand Mismatch
+![Geographic Concentration](assets/figures/fig3_geo_concentration.png)
+
+### 5. Review Text NLP Sentiment Frequency Ratios
+![NLP Sentiment](assets/figures/fig5_review_words.png)
+
+---
+
+## Detailed Repository Documentation
+
+- [01. Executive Summary](docs/01_EXECUTIVE_SUMMARY.md)
+- [02. Data Pipeline and Cleaning Specification](docs/02_DATA_PIPELINE_AND_CLEANING.md)
+- [03. Exploratory Data Analysis](docs/03_EXPLORATORY_ANALYSIS.md)
+- [04. Multivariate Root-Cause Modeling](docs/04_ROOT_CAUSE_ANALYSIS.md)
+- [05. Strategic Recommendations and Roadmap](docs/05_STRATEGIC_RECOMMENDATIONS.md)
+- [06. Review Text NLP Analysis](docs/06_REVIEW_TEXT_NLP.md)
+
+---
+
 # Executive Summary: Olist Marketplace Analysis
 ## Drivers of Customer Satisfaction on Brazil's Largest E-Commerce Integrator
 
