@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 18px; fill: #1D3557; }
+      .subtitle { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 12px; fill: #457B9D; }
+      .box { fill: #F8F9FA; stroke: #2E4374; stroke-width: 2; rx: 6; }
+      .box-highlight { fill: #EBF2FA; stroke: #1D3557; stroke-width: 2.5; rx: 6; }
+      .header-text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 13px; fill: #1D3557; }
+      .body-text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 11px; fill: #333333; }
+      .arrow { stroke: #2E4374; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .tag { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: bold; fill: #FFFFFF; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2E4374" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#FFFFFF" />
+
+  <text x="30" y="35" class="title">Olist Relational Architecture and Data Pipeline</text>
+  <text x="30" y="55" class="subtitle">9-Table Relational Schema Integration to Order-Grain Analytical Master Table</text>
+
+  <g transform="translate(30, 80)">
+    <rect width="200" height="85" class="box" />
+    <rect width="200" height="24" fill="#1D3557" rx="5" />
+    <text x="10" y="16" class="tag">orders (99,441)</text>
+    <text x="10" y="42" class="body-text">- order_id (PK)</text>
+    <text x="10" y="58" class="body-text">- customer_id (FK)</text>
+    <text x="10" y="74" class="body-text">- timestamps (carrier, delivery)</text>
+  </g>
+
+  <g transform="translate(30, 185)">
+    <rect width="200" height="80" class="box" />
+    <rect width="200" height="24" fill="#457B9D" rx="5" />
+    <text x="10" y="16" class="tag">order_items (112,650)</text>
+    <text x="10" y="42" class="body-text">- order_id, product_id, seller_id</text>
+    <text x="10" y="58" class="body-text">- price, freight_value</text>
+    <text x="10" y="74" class="body-text">Aggregated to order grain</text>
+  </g>
+
+  <g transform="translate(30, 285)">
+    <rect width="200" height="80" class="box" />
+    <rect width="200" height="24" fill="#457B9D" rx="5" />
+    <text x="10" y="16" class="tag">order_payments (103,886)</text>
+    <text x="10" y="42" class="body-text">- payment_type, installments</text>
+    <text x="10" y="58" class="body-text">- payment_value (total)</text>
+    <text x="10" y="74" class="body-text">- primary method identified</text>
+  </g>
+
+  <g transform="translate(30, 385)">
+    <rect width="200" height="75" class="box" />
+    <rect width="200" height="24" fill="#457B9D" rx="5" />
+    <text x="10" y="16" class="tag">order_reviews (100,000)</text>
+    <text x="10" y="42" class="body-text">- review_score (1 to 5 stars)</text>
+    <text x="10" y="58")j¶¦6Æ73Ò&&öG’×FW‡B#âÒ&Wf–Wuö6öÖÖVçEöÖW76vSÂ÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#s""6Æ73Ò&&öG’×FW‡B#äFVGWÆ–6FVB'’÷&FW%ö–CÂ÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒ#sÂƒ’#à¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ#sR"6Æ73Ò&&÷‚"óà¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ##""f–ÆÃÒ"3$”Cƒb"'ƒÒ#B"óà¢ÇFW‡BƒÒ#"“Ò#R"6Æ73Ò'Fr#æ7W7FöÖW'2ƒ“’ÃCC“Â÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#C"6Æ73Ò&&öG’×FW‡B#âÒ7W7FöÖW%ö–B†÷&FW"ÖÆWfVÂ“Â÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#Sb"6Æ73Ò&&öG’×FW‡B#âÒ7W7FöÖW%÷Væ—VUö–B‡W'6öâ“Â÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#s"6Æ73Ò&&öG’×FW‡B#âÒ7W7FöÖW%÷7FFRÂ¦—÷&Vf—ƒÂ÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒ#sÂƒR’#à¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ#ƒ"6Æ73Ò&&÷‚"óà¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ##""f–ÆÃÒ"3$”Cƒb"'ƒÒ#B"óà¢ÇFW‡BƒÒ#"“Ò#R"6Æ73Ò'Fr#ç&öGV7G2²G&ç6ÆF–öãÂ÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#C"6Æ73Ò&&öG’×FW‡B#âÒ&öGV7Eö–Bƒ3"Ã“S“Â÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#Sb"6Æ73Ò&&öG’×FW‡B#âÒVævÆ—6‚6FVv÷'’Ö–æsÂ÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#s""6Æ73Ò&&öG’×FW‡B#âÒF–ÖVç6–öç2ÂvV–v‡B†r“Â÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒ#sÂ#“’#à¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ#cR"6Æ73Ò&&÷‚"óà¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ##""f–ÆÃÒ"3$”Cƒb"'ƒÒ#B"óà¢ÇFW‡BƒÒ#"“Ò#R"6Æ73Ò'Fr#ç6VÆÆW'2ƒ2Ã“R“Â÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#C"6Æ73Ò&&öG’×FW‡B#âÒ6VÆÆW%ö–BÂ6VÆÆW%÷7FFSÂ÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#Sb"6Æ73Ò&&öG’×FW‡B#âÒS’ãrR&6VB–â5Â÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒ#sÂ3ƒ’#à¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ#cR"6Æ73Ò&&÷‚"óà¢Ç&V7Bv–GFƒÒ#ƒ"†V–v‡CÒ##""f–ÆÃÒ"3$”Cƒb"'ƒÒ#B"óà¢ÇFW‡BƒÒ#"“Ò#R"6Æ73Ò'Fr#ævVöÆö6F–öâƒÒ²&÷w2“Â÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#C"6Æ73Ò&&öG’×FW‡B#âÒ¦—÷&Vf—‚vw&VvFVBFóÂ÷FW‡Cà¢ÇFW‡BƒÒ#"“Ò#Sb"6Æ73Ò&&öG’×FW‡B#æÖVâÆBæBÆæsÂ÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒC“Âƒ’#à¢Ç&V7Bv–GFƒÒ#s"†V–v‡CÒ#c"6Æ73Ò&&÷‚Ö†–v†Æ–v‡B"óà¢ÇFW‡BƒÒ#R"“Ò#3"6Æ73Ò&†VFW"×FW‡B#äfVGW&RVæv–æVW&–æsÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#SR"6Æ73Ò&&öG’×FW‡B#âÒf–ÇFW#¢FVÆ—fW&VB÷&FW'3Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#sR"6Æ73Ò&&öG’×FW‡B#âÒFVÆ’g2âW7F–ÖFSÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#“R"6Æ73Ò&&öG’×FW‡B#âÒg&V–v‡B×FòÕ&–6R&F–óÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#R"6Æ73Ò&&öG’×FW‡B#âÒ×VÇF’Õ6VÆÆW"fÆsÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#3R"6Æ73Ò&&öG’×FW‡B#âÒ7&÷72Õ7FFRÖF6ƒÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#S"6Æ73Ò&&öG’×FW‡B#âÒÆ÷r&Wf–WrƒÓ"7F'2“Â÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒsÂ’#à¢Ç&V7Bv–GFƒÒ###"†V–v‡CÒ##"6Æ73Ò&&÷‚Ö†–v†Æ–v‡B"f–ÆÃÒ"4S„cDc‚"7G&ö¶SÒ"3C3SSr"óà¢ÇFW‡BƒÒ#R"“Ò##R"6Æ73Ò&†VFW"×FW‡B#äÖ7FW"÷&FW"F&ÆR†Fb“Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#CR"6Æ73Ò&&öG’×FW‡B#âÒ“bÃCs‚FVÆ—fW&VB÷&FW'3Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#cR"6Æ73Ò&&öG’×FW‡B#âÒÕ&÷r×W"Ô÷&FW"w&–ãÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#ƒR"6Æ73Ò&&öG’×FW‡B#âÒÆöv—7F–72b&Wf–WrF&vWG3Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#R"6Æ73Ò&&öG’×FW‡B#âÒ×VÇF—f&–FRÆöv—BÆöv—CÂ÷FW‡Cà¢Âösà ¢ÆrG&ç6f÷&ÓÒ'G&ç6ÆFRƒsÂ#c’#à¢Ç&V7Bv–GFƒÒ###"†V–v‡CÒ##"6Æ73Ò&&÷‚Ö†–v†Æ–v‡B"f–ÆÃÒ"4S„cDc‚"7G&ö¶SÒ"3C3SSr"óà¢ÇFW‡BƒÒ#R"“Ò##R"6Æ73Ò&†VFW"×FW‡B#ä—FVÒÖ7FW"F&ÆR†—FVÕögVÆÂ“Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#CR"6Æ73Ò&&öG’×FW‡B#âÒ"ÃcS—FVÒÔÆWfVÂ&V6÷&G3Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#cR"6Æ73Ò&&öG’×FW‡B#âÒ&öGV7BF–ÖVç6–öç2GF6†VCÂ÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#ƒR"6Æ73Ò&&öG’×FW‡B#âÒ6VÆÆW"b6FVv÷'’GG&–'WFW3Â÷FW‡Cà¢ÇFW‡BƒÒ#R"“Ò#R"6Æ73Ò&&öG’×FW‡B#âÒ6FVv÷'’6öæf–FVæ6R–çFW'fÇ3Â÷FW‡Cà¢Âösà ¢ÇF‚CÒ$Ó#3#Ã#s#"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$Ó#3##RÃ#s##R"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$Ó#33#RÃC“#c"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$Ó#3C#ÃC“#“"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$ÓCS#ÃC“#"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$ÓCS##RÃC“#C"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$Ócc#3Ãss"6Æ73Ò&'&÷r"óà¢ÇF‚CÒ$Ócc#ƒÃs3#"6Æ73Ò&'&÷r"óà£Â÷7fsà
