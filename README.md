@@ -93,11 +93,19 @@ To prevent confounding between high order values, complex orders, and transit di
 
 ![Odds Ratios](assets/figures/fig2_odds_ratios.png)
 
+##### Logistic Regression Model Specification
+
+```
+logit(P(Low Review)) = Beta_0 + Beta_1 * (is_late)
+                              + Beta_2 * (multi_seller)
+                              + Beta_3 * (interstate)
+                              + Beta_4 * (freight_ratio)
+                              + Beta_5 * (log_payment)
+```
+
 ##### Multivariate Logistic Regression Output Table
 
-$$\log\left(\frac{P(\text{Low Review})}{1 - P(\text{Low Review})}\right) = \beta_0 + \beta_1(\text{is\_late}) + \beta_2(\text{multi\_seller}) + \beta_3(\text{interstate}) + \beta_4(\text{freight\_ratio}) + \beta_5(\text{log\_payment})$$
-
-| Independent Variable | Coefficient ($eta$) | Std. Error | z-statistic | p-value | Odds Ratio (OR) | 95% Confidence Interval |
+| Independent Variable | Coefficient (Beta) | Std. Error | z-statistic | p-value | Odds Ratio (OR) | 95% Confidence Interval |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Intercept** | -2.4812 | 0.0214 | -115.94 | < 0.001 | 0.084 | [0.080, 0.087] |
 | **Order Delivered Late (`is_late`)** | **+1.8961** | **0.0282** | **67.24** | **< 0.001** | **6.66** | **[6.30, 7.04]** |
