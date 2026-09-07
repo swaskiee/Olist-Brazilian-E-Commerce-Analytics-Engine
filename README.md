@@ -34,7 +34,7 @@
 | 📄 Full Analysis Report | [`Olist_Analysis_Report.pdf`](Olist_Analysis_Report.pdf) |
 | 🎬 Video Walkthrough | [Watch on Google Drive](https://drive.google.com/file/d/1bC28jzAZq1CBUndcHdjCWyxSoSFhCrVg/view?usp=drivesdk) |
 | 📊 Summary Dashboard | [`assets/Olist_Dashboard.png`](assets/Olist_Dashboard.png) |
-| 💻 Runnable Source Notebook | [`notebook/Olist_Marketplace_Analysis.ipynb`](notebook/Olist_Marketplace_Analysis.ipynb) |
+| 💻 Runnable Source Notebook | [`notebooks/Olist_Marketplace_Analysis.ipynb`](notebooks/Olist_Marketplace_Analysis.ipynb) |
 | 📚 Step-by-Step Write-Up | [`docs/`](docs/) |
 | 🖼️ Supporting Charts | [`assets/figures/`](assets/figures/) |
 
