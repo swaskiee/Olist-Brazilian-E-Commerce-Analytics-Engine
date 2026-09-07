@@ -31,10 +31,12 @@
 | Deliverable | Link |
 |---|---|
 | 📓 Interactive Google Colab Notebook | [Open in Colab](https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing) |
-| 📄 Full Analysis Report | [`Olist_Analysis_Report.pdf`](Olist_Analysis_Report.pdf) |
+| 📄 Full Analysis Report | [`Olist_Analysis_Report.pdf`](notebook/Olist_Analysis_Report.pdf) |
+| 🎬 Video Walkthrough | [Watch on Google Drive](https://drive.google.com/file/d/1bC28jzAZq1CBUndcHdjCWyxSoSFhCrVg/view?usp=drivesdk) |
 | 📊 Summary Dashboard | [`assets/Olist_Dashboard.png`](assets/Olist_Dashboard.png) |
-| 🎬 Video Script | [`docs/Video_Script.md`](docs/Video_Script.md) |
 | 💻 Runnable Source Notebook | [`notebook/Olist_Marketplace_Analysis.ipynb`](notebook/Olist_Marketplace_Analysis.ipynb) |
+| 📚 Step-by-Step Write-Up | [`docs/`](docs/) |
+| 🖼️ Supporting Charts | [`assets/figures/`](assets/figures/) |
 
 ---
 
@@ -95,13 +97,14 @@ Payment type and installment count show almost no relationship with satisfaction
 
 ```
 ├── notebook/
-│   └── Olist_Marketplace_Analysis.ipynb   # Full analysis: cleaning → EDA → 6 core questions → root-cause model
-├── report/
-│   └── Olist_Analysis_Report.docx         # Written report — problem, approach, insights, recommendations
+│   ├── Olist_Marketplace_Analysis.ipynb    # Full analysis: cleaning → EDA → 6 core questions → root-cause model
+│   └── Olist_Analysis_Report.pdf           # Written report — problem, approach, insights, recommendations
 ├── assets/
-│   └── Olist_Dashboard.png                # Summary dashboard
+│   ├── Olist_Dashboard.png                 # Summary dashboard
+│   ├── figures/                            # Individual charts for each of the 6 analysis steps
+│   └── diagrams/                           # (reserved for architecture/schema diagrams)
 ├── docs/
-│   └── Video_Script.md                    # 3-minute presentation script
+│   └── 01–06_*.md                          # Step-by-step written summary of the analysis
 └── README.md
 ```
 
