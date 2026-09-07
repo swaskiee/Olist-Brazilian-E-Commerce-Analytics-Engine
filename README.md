@@ -31,7 +31,7 @@
 | Deliverable | Link |
 |---|---|
 | 📓 Interactive Google Colab Notebook | [Open in Colab](https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing) |
-| 📄 Full Analysis Report | [`Olist_Analysis_Report.docx`](report/Olist_Analysis_Report.docx) |
+| 📄 Full Analysis Report | [`Olist_Analysis_Report.pdf`](Olist_Analysis_Report.pdf) |
 | 📊 Summary Dashboard | [`assets/Olist_Dashboard.png`](assets/Olist_Dashboard.png) |
 | 🎬 Video Script | [`docs/Video_Script.md`](docs/Video_Script.md) |
 | 💻 Runnable Source Notebook | [`notebook/Olist_Marketplace_Analysis.ipynb`](notebook/Olist_Marketplace_Analysis.ipynb) |
