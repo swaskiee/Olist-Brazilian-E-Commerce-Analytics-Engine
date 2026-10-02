@@ -32,6 +32,7 @@
 |---|---|
 | 📓 Interactive Google Colab Notebook | [Open in Colab](https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing) |
 | 📄 Full Analysis Report | [`Olist_Analysis_Report.pdf`](Olist_Analysis_Report.pdf) |
+| 📊 Power BI Dashboard | [`olist.pbix`](olist.pbix) |
 | 🎬 Video Walkthrough | [Watch on Google Drive](https://drive.google.com/file/d/1bC28jzAZq1CBUndcHdjCWyxSoSFhCrVg/view?usp=drivesdk) |
 | 📊 Summary Dashboard | [`assets/Olist_Dashboard.png`](assets/Olist_Dashboard.png) |
 | 💻 Runnable Source Notebook | [`notebooks/Olist_Marketplace_Analysis.ipynb`](notebooks/Olist_Marketplace_Analysis.ipynb) |
