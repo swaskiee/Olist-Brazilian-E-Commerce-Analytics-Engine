@@ -9,6 +9,7 @@
 [![Pandas](https://img.shields.io/badge/Pandas-Data%20Wrangling-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![Statsmodels](https://img.shields.io/badge/Statsmodels-Regression-orange?style=flat)](https://www.statsmodels.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib%20%7C%20Seaborn-Visualization-11557c?style=flat)](https://matplotlib.org/)
+[![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=flat&logo=powerbi&logoColor=black)](powerbi/)
 [![Google Colab](https://img.shields.io/badge/Notebook-Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing)
 [![License: CC BY-NC-SA](https://img.shields.io/badge/Dataset%20License-CC%20BY--NC--SA-lightgrey?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
@@ -32,7 +33,8 @@
 |---|---|
 | 📓 Interactive Google Colab Notebook | [Open in Colab](https://colab.research.google.com/drive/1EnHyB2i0-804eXQz3iOYwWuwzpD5u8Mk?usp=sharing) |
 | 📄 Full Analysis Report | [`Olist_Analysis_Report.pdf`](Olist_Analysis_Report.pdf) |
-| 📊 Power BI Dashboard | [`olist.pbix`](olist.pbix) |
+| 📊 Power BI Dashboard (.pbix) | [`powerbi/olist.pbix`](powerbi/olist.pbix) |
+| 🖼️ Power BI Dashboard View | [`powerbi/powerbi_dashboard.png`](powerbi/powerbi_dashboard.png) |
 | 🎬 Video Walkthrough | [Watch on Google Drive](https://drive.google.com/file/d/1bC28jzAZq1CBUndcHdjCWyxSoSFhCrVg/view?usp=drivesdk) |
 | 📊 Summary Dashboard | [`assets/Olist_Dashboard.png`](assets/Olist_Dashboard.png) |
 | 💻 Runnable Source Notebook | [`notebooks/Olist_Marketplace_Analysis.ipynb`](notebooks/Olist_Marketplace_Analysis.ipynb) |
@@ -100,6 +102,9 @@ Payment type and installment count show almost no relationship with satisfaction
 ├── notebook/
 │   ├── Olist_Marketplace_Analysis.ipynb    # Full analysis: cleaning → EDA → 6 core questions → root-cause model
 │   └── Olist_Analysis_Report.pdf           # Written report — problem, approach, insights, recommendations
+├── powerbi/
+│   ├── olist.pbix                          # Interactive Power BI dashboard report
+│   └── powerbi_dashboard.png               # High-resolution dashboard visual capture
 ├── assets/
 │   ├── Olist_Dashboard.png                 # Summary dashboard
 │   ├── figures/                            # Individual charts for each of the 6 analysis steps
@@ -124,11 +129,12 @@ Payment type and installment count show almost no relationship with satisfaction
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Skills
 
-Pure Python, single ecosystem, no external BI tool:
-
-`pandas` · `numpy` · `matplotlib` · `seaborn` · `statsmodels` · `scipy` · `scikit-learn` — run end-to-end in **Google Colab**.
+- **Languages & Frameworks:** Python (3.10), DAX
+- **Data Wrangling & Statistical Modeling:** `pandas` · `numpy` · `statsmodels` · `scipy` · `scikit-learn`
+- **Visualization & BI:** `matplotlib` · `seaborn` · **Microsoft Power BI**
+- **Environment:** Google Colab, Power BI Desktop
 
 ---
 
